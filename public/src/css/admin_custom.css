@@ -1,0 +1,7 @@
+:root {
+    --morado: #16112d;
+}
+
+.fondo-morado {
+    background-color: var(--morado) !important;
+}
