@@ -7,6 +7,25 @@
   * @license Apache-2.0
   */
 
+:root {
+    /* PROPUESTA DE COLORES blue scaler */
+      --azul-oscuro-uno: #080312;
+      --azul-oscuro-dos: #16112D;
+      --azul-opaco-uno: #222444;
+      --azul-opaco-dos: #3A5479;
+      --azul-cielo-uno: #416986;
+      --azul-clielo-dos: #467B90;
+      --azul-claro-uno: #7CA3B1;
+      --azul-claro-dos: #AFC7CF;
+      --azul-palido: #C5D6DE;
+  
+    /* COLORES OFICIALES DEL EQUIPO --------------------------------*/
+      --gris-palido: #EBEBEB;
+      --gris-claro: #C0C0C0;
+      --azul-pastel: #3A6EA5;
+      --azul-cielo: #004E98;
+}
+
 .clearfix {
   *zoom: 1;
 }
