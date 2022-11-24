@@ -187,14 +187,14 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => 'fondo-morado',
+    'classes_brand' => 'bg-color2',
     'classes_brand_text' => '',
     'classes_content_wrapper' => 'bg-white',
     'classes_content_header' => 'text-gray-dark',
     'classes_content' => '',
-    'classes_sidebar' => 'fondo-morado sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'bg-color2 sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'fondo-morado navbar-dark navbar-light',
+    'classes_topnav' => 'bg-color2 navbar-dark navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
