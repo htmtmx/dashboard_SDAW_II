@@ -7,31 +7,20 @@
 @stop
 
 @section('content')
-
-    @if (session('info'))
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong> Se actualizaron los roles correctamente</strong>
-            <button type="button" class="close text-danger" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    @endif
-
     <div class="card">
         <div class="card-body">
             <p class="h5">Nombre:</p>
-            <p class="form-control"> {{ $user->name }} </p>
+            <p class="form-control"> {{ $user->full_name }} </p>
             {!! Form::model($user, ['route' => ['admin.users.update', $user], 'method' => 'put']) !!}
 
             <p class="h5">Listado de roles</p>
             @foreach ($roles as $role)
-                <div>
-                    <label>
-                        {!! Form::checkbox('roles[]', $role->id, null, ['class' => 'mr-1']) !!}
-                        {{ $role->name }}
-                    </label>
+                <div class="form-check">
+                    {{ Form::radio('role', $role->id, Auth::user()->hasRole($role->name), ['class' => 'mr-1']) }}
+                    {{ Form::label('role', $role->name) }}
                 </div>
             @endforeach
+
             {!! Form::submit(__('Assign role'), ['class' => 'btn btn-success']) !!}
             {!! Form::close() !!}
         </div>

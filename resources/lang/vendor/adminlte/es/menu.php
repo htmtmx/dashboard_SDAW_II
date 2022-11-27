@@ -19,5 +19,10 @@ return [
     'search'                        => 'Buscar',
     'users_settings'                => 'CONFIGURACION DE USUARIOS',
     'users'                         => 'Usuarios',
+    'company_settings'              => 'CONFIGURACION DE COMPAÑIA',
+    'others'                        => 'OTROS',
+    'employees'                     => 'Empleados',
+    'roles'                         => 'Roles',
+    'company'                       => 'Compañia'
 
 ];

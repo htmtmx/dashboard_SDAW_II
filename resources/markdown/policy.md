@@ -1,3 +1,6 @@
-# Privacy Policy
+## PRIVACIDAD
 
-Edit this file to define the privacy policy for your application.
+SDAW garantiza que la información personal que usted envía cuenta con la
+seguridad necesaria. Puede revisar más a detalle en nuestra POLÍTICA DE PRIVACIDAD
+SDAW reserva los derechos de cambiar o de modificar estos términos sin
+previo aviso

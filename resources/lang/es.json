@@ -36,5 +36,16 @@
     "Already registered?": "Ya tienes cuenta?",
     "Email Password Reset Link": "Mandar link de recuperacion",
     "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "¿Olvidaste tu contraseña? No hay problema. Ingresa tu email para enviarte un link de recuperacion.",
-    "Assign role":"Asignar rol"
+    "Assign role": "Asignar rol",
+    "Employees": "Empleados",
+    "Employee": "Empleado",
+    "List of roles": "Listado de roles",
+    "Edit": "Editar",
+    "Company Name": "Nombre de la compañia",
+    "Paternal Surname": "Apellido Paterno",
+    "Maternal Surname": "Apellido Materno",
+    "Change Logo": "Cambiar Logotipo",
+    "Update": "Actualizar",
+    "Register new employee": "Registrar nuevo empleado",
+    "New employee": "Nuevo empleado"
 }

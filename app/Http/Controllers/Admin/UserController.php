@@ -61,7 +61,10 @@ class UserController extends Controller
     {
         // return  $user->getRoleNames();
 
-        $roles = Role::all();
+        $roles = Role::where('guard_name', 'web')->get();
+        // $rolesAll = Role::all();
+
+        // return ['rolesWeb' => $roles, 'roles' => $rolesAll, 'user' => $user->getRoleNames()];
         return view('admin.users.edit', compact('user', 'roles'));
     }
 
@@ -74,7 +77,7 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $user->roles()->sync($request->roles);
+        $user->roles()->sync($request->role);
         return redirect()->route('admin.users.edit', $user)->with('success', 'Roles Actualizados');
     }
 

@@ -22,6 +22,8 @@ class User extends Authenticatable
 
     protected $fillable = [
         'name',
+        'paternal_surname',
+        'maternal_surname',
         'email',
         'password',
     ];
@@ -37,6 +39,7 @@ class User extends Authenticatable
 
     protected $appends = [
         'profile_photo_url',
+        'full_name'
     ];
 
     public function adminlte_image()
@@ -52,5 +55,17 @@ class User extends Authenticatable
     public function adminlte_profile_url()
     {
         return 'profile/username';
+    }
+
+    public function getFullNameAttribute()
+    {
+        return $this->name . ' ' . $this->paternal_surname . ' ' . $this->maternal_surname;
+    }
+
+    // RELACIONES
+
+    public function company()
+    {
+        return $this->hasOne(Company::class);
     }
 }

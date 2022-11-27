@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/team', function () {
+    return view('team');
+})->name('team');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

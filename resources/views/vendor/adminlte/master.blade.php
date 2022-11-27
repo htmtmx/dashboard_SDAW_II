@@ -10,7 +10,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- CUSTOM CSS --}}
-    {{-- <link rel="stylesheet" href="{{ asset('src/css/admin_custom.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('src/css/extra.css') }}">
     {{-- Custom Meta Tags --}}
     @yield('meta_tags')
 

@@ -17,14 +17,13 @@ class RoleSeeder extends Seeder
     public function run()
     {
         $role1 = Role::create(['name' => 'Admin']);
-        $role2 = Role::create(['name' => 'Alamcenista']);
-        $role3 = Role::create(['name' => 'HelpDesk']);
+        $role2 = Role::create(['name' => 'User']);
 
         // Dashboard
-        Permission::create(['name' => 'admin.home'])->syncRoles([$role1, $role2, $role3]);
+        Permission::create(['name' => 'admin.home'])->syncRoles([$role1, $role2]);
 
         // Users
-        Permission::create(['name' => 'admin.users.index'])->syncRoles([$role1, $role2, $role3]);
+        Permission::create(['name' => 'admin.users.index'])->syncRoles([$role1]);
         Permission::create(['name' => 'admin.users.edit'])->syncRoles([$role1]);
         Permission::create(['name' => 'admin.users.update'])->syncRoles([$role1]);
         Permission::create(['name' => 'admin.users.view'])->syncRoles([$role1]);
@@ -37,5 +36,12 @@ class RoleSeeder extends Seeder
         // Permission::create(['name' => 'admin.']);
         // Permission::create(['name' => 'admin.']);
 
+
+        $arrayOfRoleNames = ['Admin', 'Alamacenista', 'HelpDesk'];
+        $roles = collect($arrayOfRoleNames)->map(function ($role) {
+            return ['name' => $role, 'guard_name' => 'company', 'created_at' => now(), 'updated_at' => now()];
+        });
+
+        Role::insert($roles->toArray());
     }
 }

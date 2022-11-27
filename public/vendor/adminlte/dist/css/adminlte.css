@@ -11,6 +11,54 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+
+  /* PROPUESTA DE COLORES blue scaler */
+  --color1: #080312;
+  --color2: #16112D;
+  --color3: #222444;
+  --color4: #3474CE;
+  --color5: #416986;
+  --color6: #467B90;
+  --color7: #7CA3B1;
+  --color8: #AFC7CF;
+  --color9: #C5D6DE;
+
+  /* COLORES OFICIALES DEL EQUIPO --------------------------------*/
+  --color-primario-1: #004E98;
+  --color-primario-2: #1580F2;
+  --color-primario-3: #C0C0C0;
+  --color-primario-4: #EBEBEB;   
+  
+  --letra-color-primario-1: #FFF;
+  --letra-color-primario-2: #FFF;
+  --letra-color-primario-3: #16112D;
+  --letra-color-primario-4: #16112D;   
+
+  /* COLORES EXTRAS PARA SU USO */
+  --panel-de-control: #16112D; /*--color2*/
+  --panel-de-control-letra: #C0C0C0; /*--color-primario-3*/
+
+  --graf-btn-box-1: #16112D;
+  --graf-btn-box-2: #268FFF;
+  --graf-btn-box-ex: #AFC7CF;
+  
+  --blanco: #FFF;
+  --negro: #000;
+   
+  /* DIVS Y GRÁFICAS */
+  --bg-warning: var(--letra-color-primario-3);
+  --gradiente-uno: #16112D;   /* #16112D */
+  --selector-uno: #004E98;    /* #3474CE */
+  --selector-dos: #1580F2;  /* --color */
+  --selector-tres: #C0C0C0;
+  --selector-cuatro: #EBEBEB; 
+
+  --bg-gradient-principal: #16112D;
+  --world-map: #AFC7CF; /* #c9dfaf; */
+  --bg-gradient-secundario: #268FFF;
+
+  /* ORIGINALES */
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;

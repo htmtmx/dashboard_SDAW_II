@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <header class="fixed w-full">
+    <header class="{{ request()->is(['register', 'terms-of-service', 'privacy-policy']) ? 'static' : 'fixed' }} w-full">
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-morado">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="#" class="flex items-center">
+                <a href="{{ route('home') }}" class="flex items-center">
                     <img src="./images/logo.svg" class="h-12 mr-3 sm:h-12" alt="SDAW Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SDAW</span>
                 </a>
@@ -69,20 +69,13 @@
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a href="{{ route('home') }}"
-                                class="block py-2 pl-3 pr-4 text-white rounded lg:bg-transparent {{ request()->is('/') ? 'lg:text-azul' : '' }}  lg:p-0 dark:text-white"
-                                aria-current="page">
+                                class=" {{ request()->routeIs('home') ? 'lg:text-indigo-300' : '' }} block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-300 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
                                 {{ __('Home') }}
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-300 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                {{ __('Company') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-300 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                            <a href="{{ route('team') }}"
+                                class=" {{ request()->routeIs('team') ? 'lg:text-indigo-300' : '' }} block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-300 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
                                 {{ __('Team') }}
                             </a>
                         </li>
