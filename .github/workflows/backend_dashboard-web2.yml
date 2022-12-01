@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'dashboard-web2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8761E283BD6C440886EB1368858CAFBB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D54F46BD747044D78A6D6BDD498445D8 }}
           package: .
