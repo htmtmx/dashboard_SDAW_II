@@ -20,7 +20,7 @@
             <div class="d-flex flex-column align-items-center justify-content-around gap-3">
                 <div>
                     <img id="frame"
-                        src="{{ $company->logo_path ? Storage::url($company->logo_path) : secure_asset'./images/logo.png') }}"
+                        src="{{ $company->logo_path ? Storage::url($company->logo_path) : secure_asset('./images/logo.png') }}"
                         class="image-fluid rounded-circle company-shadow" style="width: 150px; height: 150px;" />
                 </div>
                 <div class="mt-2">
